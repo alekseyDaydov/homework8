@@ -73,7 +73,7 @@ public class Main {
         //task4
         for (int i = 0; i < massInt.length; i++) {
             if (massInt[i] % 2 != 0) {
-                massInt[i] = massInt[i] + 1;
+                massInt[i] += 1;
             }
         }
         System.out.println(Arrays.toString(massInt));
