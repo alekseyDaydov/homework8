@@ -29,7 +29,7 @@ public class Main {
         }
         System.out.println();
         for (int i = 0; i < massDouble.length; i++) {
-            if (i == (massInt.length - 1)) {
+            if (i == (massDouble.length - 1)) {
                 System.out.print(massDouble[i]);
             } else {
                 System.out.print(massDouble[i] + ", ");
@@ -37,7 +37,7 @@ public class Main {
         }
         System.out.println();
         for (int i = 0; i < massLong.length; i++) {
-            if (i == (massLong.length) - 1) {
+            if (i == (massLong.length - 1)) {
                 System.out.print(massLong[i]);
             } else {
                 System.out.print(massLong[i] + ", ");
@@ -46,27 +46,24 @@ public class Main {
         System.out.println();
 
         //task3
-        for (int i = (massInt.length - 1); i >= 0; i--) {
-            if (i == 0) {
-                System.out.print(massInt[i]);
-            } else {
-                System.out.print(massInt[i] + ", ");
+        for (int i = massInt.length - 1; i >= 0; i--) {
+            System.out.print(massInt[i]);
+            if (i > 0) {
+                System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = (massDouble.length - 1); i >= 0; i--) {
-            if (i == 0) {
-                System.out.print(massDouble[i]);
-            } else {
-                System.out.print(massDouble[i] + ", ");
+        for (int i = massDouble.length - 1; i >= 0; i--) {
+            System.out.print(massDouble[i]);
+            if (i > 0) {
+                System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = (massLong.length - 1); i >= 0; i--) {
-            if (i == 0) {
-                System.out.print(massLong[i]);
-            } else {
-                System.out.print(massLong[i] + ", ");
+        for (int i = massLong.length - 1; i >= 0; i--) {
+            System.out.print(massLong[i]);
+            if (i > 0) {
+                System.out.print(", ");
             }
         }
         System.out.println();
